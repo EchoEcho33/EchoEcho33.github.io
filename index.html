@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function modalWindow() {
+            var modal = document.getElementById("modalContainer");
+            if (modal.style.display === "none") {
+                modal.style.display = "block"
+            } else {
+                modal.style.display = "none"
+            }
+        }
+    </script>
+</head>
+<body style="background-color: rgb(179, 203, 190)">
+    <div class="banner">
+        <div></div>
+        <img style="height: 30px; width: 200px; left: 50%" src="Images/Name.png">
+    </div>
+
+    <div class="modalContainer">
+        <div class="modal" style="display: none">
+            <p>TEST</p>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>
+                <div class="card" onclick="modalWindow()">
+                    <div class="image">
+                        <img src="images/Lan.png">
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="card">
+                    <div class="image">
+                        <img src="images/Sheep.png" style="height: 225px; width: 225px">
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="card">
+                    <div class="image">
+                        <img src="images/Lion Man.png">
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </table>
+
+</body>
+</html>
