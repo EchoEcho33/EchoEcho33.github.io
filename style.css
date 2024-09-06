@@ -3,15 +3,16 @@
     transition: 0.3s;
     width: auto;
     background: aliceblue;
-
 }
 
-h1 {
-    font: #3d4154;
+h3 {
+    color: #3d4154;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(78, 78, 110, 0.35);
+    box-shadow: 0 8px 16px 0 rgba(78, 78, 110, 0.4);
 }
 
 .image {
@@ -49,7 +50,7 @@ table {
 
 .card img {
     height: 225px;
-    width: 225px
+    width: 225px;
 }
 
 .banner {
@@ -57,7 +58,8 @@ table {
     height: 225px;
     text-align: center;
     position: relative;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), aliceblue, rgba(0, 0, 0, 0))
+    background-color: aliceblue;
+    border-radius: 20px;
 }
 
 .banner img {
@@ -68,15 +70,13 @@ table {
     transform: translateX(-52%);
 }
 
-footer {
-    background: aliceblue;
-}
-
 .border {
-    background: aliceblue;
-    height: 100px;
+    background: rgb(193, 216, 203);
+    height: 400px;
     width: auto;
+    margin-inline: 30px;
     margin-top: 50px;
+    border-radius: 20px;
 }
 
 .footer {
@@ -85,6 +85,7 @@ footer {
     width: 100%;
     background: aliceblue;
     bottom: 0%;
+    left: 0%;
 }
 
 .socialMediaIcon {
@@ -98,4 +99,8 @@ footer {
 
 .socialMediaIcon:hover {
     background-color: rgb(192, 195, 213);
+}
+
+.page {
+    margin-inline: 30px;
 }
