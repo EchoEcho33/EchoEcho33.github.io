@@ -1,8 +1,14 @@
-.card {
-    box-shadow: 0 4px 8px 0 rgba(65, 63, 70, 0.2);
-    transition: 0.3s;
-    width: auto;
-    background: aliceblue;
+body {
+    background-color: rgb(179, 203, 190)
+}
+
+.page {
+    margin-inline: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #3d4154;
 }
 
 h3 {
@@ -11,21 +17,29 @@ h3 {
     padding-top: 30px;
 }
 
+.cardContainer {
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(65, 63, 70, 0.2);
+    transition: 0.3s;
+    width: fit-content;
+    background: aliceblue;
+    display: inline-block;
+    margin-inline: 20px;
+    margin-block: 20px;
+}
+
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(78, 78, 110, 0.4);
 }
 
 .image {
     padding: 10px 5px;
-}
-
-th {
-    padding: 30px;
-}
-
-table {
-    width: auto;
-    margin-inline: auto;
+    width: fit-content;
+    display: inline-block;
+    width: fit-content;
 }
 
 .modalContainer {
@@ -53,30 +67,15 @@ table {
     width: 225px;
 }
 
-.banner {
-    width: 100%;
-    height: 225px;
-    text-align: center;
-    position: relative;
-    background-color: aliceblue;
-    border-radius: 20px;
-}
-
-.banner img {
-    height: 30px;
-    width: 200px;
-    position: absolute;
-    bottom: 40%;
-    transform: translateX(-52%);
-}
-
 .border {
+    padding-bottom: 30px;
     background: rgb(193, 216, 203);
-    height: 400px;
+    height: fit-content;
     width: auto;
     margin-inline: 30px;
     margin-top: 50px;
     border-radius: 20px;
+    margin-bottom: 100px;
 }
 
 .footer {
@@ -86,6 +85,13 @@ table {
     background: aliceblue;
     bottom: 0%;
     left: 0%;
+}
+
+.footer div {
+    margin-inline: auto;
+    height: 50px;
+    width: 150px;
+    padding-top: 2px;
 }
 
 .socialMediaIcon {
@@ -101,6 +107,23 @@ table {
     background-color: rgb(192, 195, 213);
 }
 
-.page {
-    margin-inline: 30px;
+.nav {
+    overflow: hidden;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.nav a {
+    transition: 0.5s;
+    float: left;
+    rgba(78, 78, 110, 0.4);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: rgb(192, 195, 213);
+    color: rgb(255, 255, 255);
 }
