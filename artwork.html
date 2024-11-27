@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Style/style.css">
     </head>
     <body>
         <div class="page">
@@ -16,17 +16,17 @@
                 <h3>Featured Artwork</h3>
                 
                 <div class="cardContainer">
-                    <div class="card" onclick="modalWindow()">
+                    <div class="card" id="artCard1">
                         <div class="image">
                             <img src="Images/Lan.png">
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" id="artCard2">
                         <div class="image">
                             <img src="Images/Sheep.png" style="height: 225px; width: 225px">
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" id="artCard3">
                         <div class="image">
                             <img src="Images/Lion Man.png">
                         </div>
@@ -45,5 +45,66 @@
                 </a>
             </div>
         </div>
+
+        <div id="modalWindow1" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeArea">&times;</span>
+              <img>
+            </div>
+        </div>
+
+        <div id="modalWindow2" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeArea">&times;</span>
+              <img>
+            </div>
+        </div>
+
+        <div id="modalWindow3" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeArea">&times;</span>
+              <img>
+            </div>
+        </div>
+
+        <script>
+            var modal1 = document.getElementById("modalWindow1");
+            var modal2 = document.getElementById("modalWindow2");
+            var modal3 = document.getElementById("modalWindow3");
+
+            var artCard1 = document.getElementById("artCard1");
+            var artCard2 = document.getElementById("artCard2");
+            var artCard3 = document.getElementById("artCard3");
+
+
+            var closeArea = document.getElementById("closeArea");
+
+            artCard1.onclick = function() {
+                modal1.style.display = "block";
+            }
+
+            artCard2.onclick = function() {
+                modal1.style.display = "block";
+            }
+
+            artCard3.onclick = function() {
+                modal1.style.display = "block";
+            }
+
+            closeArea.onclick = function() {
+                modal1.style.display = "none";
+                modal2.style.display = "none";
+                modal3.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal1.style.display = "none";
+                    modal2.style.display = "none";
+                    modal3.style.display = "none";
+                }
+            }
+            
+        </script>
     </body>
 </html>
