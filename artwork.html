@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="page">
-            <div class="nav">
+            <div class="nav nunito-regular">
                 <a href="index.html"><p>Home</p></a>
                 <a href="about.html"><p>About</p></a>
                 <a href="artwork.html"><p>Artwork</p></a>
@@ -13,22 +13,22 @@
             </div>
 
             <div class="border">
-                <h3>Featured Artwork</h3>
+                <h3 class="nunito-bold">Featured Artwork</h3>
                 
                 <div class="cardContainer">
                     <div class="card" id="artCard1">
                         <div class="image">
-                            <img src="Images/Lan.png">
+                            <img src="Images/LanThumbnail.png">
                         </div>
                     </div>
                     <div class="card" id="artCard2">
                         <div class="image">
-                            <img src="Images/Sheep.png" style="height: 225px; width: 225px">
+                            <img src="Images/SheepThumbnail.png" style="height: 225px; width: 225px">
                         </div>
                     </div>
                     <div class="card" id="artCard3">
                         <div class="image">
-                            <img src="Images/Lion Man.png">
+                            <img src="Images/LionManThumbnail.png">
                         </div>
                     </div>
                 </div>
@@ -49,21 +49,21 @@
         <div id="modalWindow1" class="modal">
             <div class="modal-content">
               <span class="close" id="closeArea">&times;</span>
-              <img>
+              <img src="Images/Lan.png" style="height: 100%">
             </div>
         </div>
 
         <div id="modalWindow2" class="modal">
             <div class="modal-content">
               <span class="close" id="closeArea">&times;</span>
-              <img>
+              <img src="Images/Sheep.png" style="height: 100%">
             </div>
         </div>
 
         <div id="modalWindow3" class="modal">
             <div class="modal-content">
               <span class="close" id="closeArea">&times;</span>
-              <img>
+              <img src="Images/LionMan.png" style="height: 100%">
             </div>
         </div>
 
@@ -81,14 +81,17 @@
 
             artCard1.onclick = function() {
                 modal1.style.display = "block";
+                modal1.scrollTo(0,173);
             }
 
             artCard2.onclick = function() {
-                modal1.style.display = "block";
+                modal2.style.display = "block";
+                modal2.scrollTo(0,173);
             }
 
             artCard3.onclick = function() {
-                modal1.style.display = "block";
+                modal3.style.display = "block";
+                modal3.scrollTo(0,173);
             }
 
             closeArea.onclick = function() {
@@ -98,13 +101,16 @@
             }
 
             window.onclick = function(event) {
-                if (event.target == modal) {
+                if (event.target == modal1 ||
+                    event.target == modal2 ||
+                    event.target == modal3
+                ) {
                     modal1.style.display = "none";
                     modal2.style.display = "none";
                     modal3.style.display = "none";
                 }
             }
-            
+
         </script>
     </body>
 </html>

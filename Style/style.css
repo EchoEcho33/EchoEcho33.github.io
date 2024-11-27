@@ -32,7 +32,8 @@ h3 {
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(78, 78, 110, 0.4);
+    box-shadow: 0 8px 16px 0 rgba(78, 78, 110, 0.6);
+    cursor: pointer;
 }
 
 .image {
@@ -138,7 +139,8 @@ h3 {
     height: 100%;
     overflow: auto;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(37, 33, 51, 0.4);
+    backdrop-filter: blur(2px);
   }
   
   /* Modal Content/Box */
@@ -148,7 +150,8 @@ h3 {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: fit-content;
+    height: 90%;
   }
 
 .close {
@@ -164,3 +167,19 @@ h3 {
     text-decoration: none;
     cursor: pointer;
   }
+
+  .nunito-bold {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .nunito-regular {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
