@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(179, 203, 190)
+    background-color: rgb(162, 203, 181)
 }
 
 .page {
@@ -83,7 +83,7 @@ h3 {
     position: fixed;
     height: 50px;
     width: 100%;
-    background: aliceblue;
+    background: white;
     bottom: 0%;
     left: 0%;
 }
@@ -110,7 +110,7 @@ h3 {
 
 .nav {
     overflow: hidden;
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -125,7 +125,7 @@ h3 {
 }
 
 .nav a:hover {
-    background-color: rgb(192, 195, 213);
+    background-color: rgb(71, 158, 135);
     color: rgb(255, 255, 255);
 }
 
@@ -146,16 +146,16 @@ h3 {
   /* Modal Content/Box */
   .modal-content {
     border-radius: 10px;
-    background-color: #fefefe;
+    background-color: #ffffff;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #86828d;
     width: fit-content;
     height: 90%;
   }
 
 .close {
-    color: #aaa;
+    color: #86828d;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -174,12 +174,17 @@ h3 {
     font-weight: 700;
     font-style: normal;
   }
-  
+
   .nunito-regular {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+  }
+
+  .echo-art-logo-wrapper {
+    width: fit-content;
+    margin-inline: auto;
   }
   
   
