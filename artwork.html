@@ -48,21 +48,21 @@
 
         <div id="modalWindow1" class="modal">
             <div class="modal-content">
-              <span class="close" id="closeArea">&times;</span>
+              <span class="close" id="closeArea1">&times;</span>
               <img src="Images/Lan.png" style="height: 100%">
             </div>
         </div>
 
         <div id="modalWindow2" class="modal">
             <div class="modal-content">
-              <span class="close" id="closeArea">&times;</span>
+              <span class="close" id="closeArea2">&times;</span>
               <img src="Images/Sheep.png" style="height: 100%">
             </div>
         </div>
 
         <div id="modalWindow3" class="modal">
             <div class="modal-content">
-              <span class="close" id="closeArea">&times;</span>
+              <span class="close" id="closeArea3">&times;</span>
               <img src="Images/LionMan.png" style="height: 100%">
             </div>
         </div>
@@ -77,7 +77,9 @@
             var artCard3 = document.getElementById("artCard3");
 
 
-            var closeArea = document.getElementById("closeArea");
+            var closeArea1 = document.getElementById("closeArea1");
+            var closeArea2 = document.getElementById("closeArea2");
+            var closeArea3 = document.getElementById("closeArea3");
 
             artCard1.onclick = function() {
                 modal1.style.display = "block";
@@ -94,9 +96,15 @@
                 modal3.scrollTo(0,173);
             }
 
-            closeArea.onclick = function() {
+            closeArea1.onclick = function() {
                 modal1.style.display = "none";
+            }
+
+            closeArea2.onclick = function() {
                 modal2.style.display = "none";
+            }
+
+            closeArea3.onclick = function() {
                 modal3.style.display = "none";
             }
 
