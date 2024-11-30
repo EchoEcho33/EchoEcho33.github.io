@@ -70,7 +70,7 @@ h3 {
 
 .border {
     padding-bottom: 30px;
-    background: rgb(193, 216, 203);
+    background: rgb(204, 232, 218);
     height: fit-content;
     width: auto;
     margin-inline: 30px;
@@ -187,4 +187,56 @@ h3 {
     margin-inline: auto;
   }
   
-  
+  .contact-buttons-wrapper {
+    width: 60%;
+    margin: auto;
+  }
+
+  .contact-buttons-wrapper div {
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    margin: auto;
+    transition: 0.7s;
+    text-align: center;
+    height: 50px;
+  }
+
+  .contact-buttons-wrapper p {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+  }
+
+  .contact-buttons-wrapper div:hover {
+    background-color:rgb(71, 158, 135);
+  }
+
+  .about-content-container {
+    position: relative;
+    height: fit-content;
+  }
+
+  .about-content-container img {
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border: solid white 10px;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+
+  .about-text-wrapper {
+    color: #3d4154;
+    font-size: 20px;
+    width: 40%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: 100px;
+    margin-left: 500px;
+  }
