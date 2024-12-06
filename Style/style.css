@@ -240,3 +240,25 @@ h3 {
     margin: 100px;
     margin-left: 500px;
   }
+
+  .gallery-button-wrapper {
+    text-align: center;
+    width: 200px;
+    height: 70px;
+    margin: auto;
+    background-color: rgb(71, 158, 135);
+    transition: 0.5s;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+    margin-block: 50px;
+    position: relative;
+  }
+
+  .gallery-button-wrapper p {
+    padding-top: 20px;
+  }
+
+  .gallery-button-wrapper:hover {
+    background-color: rgb(139, 214, 165);
+  }

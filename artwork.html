@@ -31,6 +31,21 @@
                             <img src="Images/LionManThumbnail.png">
                         </div>
                     </div>
+                    <div class="card" id="artCard4">
+                        <div class="image">
+                            <img src="Images/MermaidThumbnail.png">
+                        </div>
+                    </div>
+                    <div class="card" id="artCard5">
+                        <div class="image">
+                            <img src="Images/SkaterThumbnail.png">
+                        </div>
+                    </div>
+                    <div class="card" id="artCard6">
+                        <div class="image">
+                            <img src="Images/YukiThumbnail.png">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,19 +82,49 @@
             </div>
         </div>
 
+        <div id="modalWindow4" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeArea4">&times;</span>
+              <img src="Images/Mermaid.png" style="height: 100%">
+            </div>
+        </div>
+
+        <div id="modalWindow5" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeArea5">&times;</span>
+              <img src="Images/Skater.png" style="height: 100%">
+            </div>
+        </div>
+
+        <div id="modalWindow6" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeArea6">&times;</span>
+              <img src="Images/Yuki Fullbody.png" style="height: 100%">
+            </div>
+        </div>
+
         <script>
             var modal1 = document.getElementById("modalWindow1");
             var modal2 = document.getElementById("modalWindow2");
             var modal3 = document.getElementById("modalWindow3");
+            var modal4 = document.getElementById("modalWindow4");
+            var modal5 = document.getElementById("modalWindow5");
+            var modal6 = document.getElementById("modalWindow6");
 
             var artCard1 = document.getElementById("artCard1");
             var artCard2 = document.getElementById("artCard2");
             var artCard3 = document.getElementById("artCard3");
+            var artCard4 = document.getElementById("artCard4");
+            var artCard5 = document.getElementById("artCard5");
+            var artCard6 = document.getElementById("artCard6");
 
 
             var closeArea1 = document.getElementById("closeArea1");
             var closeArea2 = document.getElementById("closeArea2");
             var closeArea3 = document.getElementById("closeArea3");
+            var closeArea3 = document.getElementById("closeArea4");
+            var closeArea3 = document.getElementById("closeArea5");
+            var closeArea3 = document.getElementById("closeArea6");
 
             artCard1.onclick = function() {
                 modal1.style.display = "block";
@@ -96,6 +141,21 @@
                 modal3.scrollTo(0,173);
             }
 
+            artCard4.onclick = function() {
+                modal4.style.display = "block";
+                modal4.scrollTo(0,173);
+            }
+
+            artCard5.onclick = function() {
+                modal5.style.display = "block";
+                modal5.scrollTo(0,173);
+            }
+
+            artCard6.onclick = function() {
+                modal6.style.display = "block";
+                modal6.scrollTo(0,173);
+            }
+
             closeArea1.onclick = function() {
                 modal1.style.display = "none";
             }
@@ -108,14 +168,32 @@
                 modal3.style.display = "none";
             }
 
+            closeArea4.onclick = function() {
+                modal4.style.display = "none";
+            }
+
+            closeArea5.onclick = function() {
+                modal5.style.display = "none";
+            }
+
+            closeArea6.onclick = function() {
+                modal6.style.display = "none";
+            }
+
             window.onclick = function(event) {
                 if (event.target == modal1 ||
                     event.target == modal2 ||
-                    event.target == modal3
+                    event.target == modal3 ||
+                    event.target == modal4 ||
+                    event.target == modal5 ||
+                    event.target == modal6
                 ) {
                     modal1.style.display = "none";
                     modal2.style.display = "none";
                     modal3.style.display = "none";
+                    modal4.style.display = "none";
+                    modal5.style.display = "none";
+                    modal6.style.display = "none";
                 }
             }
 
